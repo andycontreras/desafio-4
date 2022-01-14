@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+}
+/* modificadores home*/
+.home{
+  width: 100%;
+  height: 670px;
+  text-align: center;
+  background-image: url("https://m.media-amazon.com/images/I/61nr1r7MpiL._AC_SL1200_.jpg");
+
+}
+@media(min-width:667px){
+  .home{
+    height: 450px;
+  }
+}
+
+h1, .home__presentacion{
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+h1{
+  font-size: 48px;
+  padding-top: 170px;
+}
+@media(min-width:667px){
+  h1{
+    padding-top: 50px;
+  }
+}
+
+.home__presentacion{
+  font-size: 32px;
+}
+ 
+/*Modificadores servicios*/
+.servicios{
+  font-family: "Poppins";
+}
+
+.servicios__titulo{
+  text-align: center;
+  padding: 25px;
+  margin: 0;
+}
+
+/* Modificadores información */
+.info{
+  background-color: #708D81;
+  width: 100%;
+  height: 570px;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.info__container{
+  padding: 60px 30px;
+}
+@media(max-width:667px){
+  .info__container{
+    padding: 100px 60px;
+  } 
+}
+
+.info__img, .info__icono{
+  display: none;
+}
+@media(min-width:667px){
+  .info__icono{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 45px;
+  }
+  .info__img{
+    display: flex;
+    justify-content: center;
+    /* padding: 40px 170px; */
+  }
+}
+
+h2{
+  font-size: 32px;
+}
+
+.info__bio{
+  font-size: 16px;
+}
+@media(min-width:667px){
+  .info__bio{
+    padding: 0 70px;
+  }
+}
+
+
+
+/* modificadores header */

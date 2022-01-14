@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.contacto {
+  background-color: #AB5E00;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+@media(min-width:667px){
+  .contacto{
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+
+}
+
+.contacto__title, .contacto__label, .contacto__input{
+  font-family: "Poppins";
+}
+
+.contacto__title{
+  font-size: 38px;
+}
+.contacto__input{
+min-width: 100%;
+}
+.contacto__label, .contacto__input{
+  font-size: 14px ;
+}
+
+.contacto__form{
+  min-width: 300px;
+}
+
+.contacto__submit-button{
+  min-width: 300px;
+  height: 35px;
+  margin-top: 50px;
+  background-color: #2C2C2C;
+  border: none;
+  color: white;
+}

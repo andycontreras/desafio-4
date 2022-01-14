@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.form-header{
+  background-image: url("https://m.media-amazon.com/images/I/61nr1r7MpiL._AC_SL1200_.jpg");;
+}
+
+.logo{
+  width: 150px;
+  height: 60px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header__menu-web{
+  display: none;
+  align-content: space-between;
+  gap: 10px;
+}
+
+.header__menu{
+  width: 60px;
+  height: 60px;
+  margin-top: 7px;
+}
+@media(min-width: 667px){
+  .header__menu{
+    display: none;
+  }
+  .header__menu-web{
+    display: flex;
+    align-content: space-between;
+    gap: 10px;
+    margin-right: 15px;
+  }
+  
+  .menu-web__style{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+
+}
+
+.bloque{
+  background-color:  #264761;
+  width: 50px;
+  height: 6px;
+  margin-top: 5px;
+  border-radius: 10px 10px;
+}
+
+.ventana{
+  background-color: #264761;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0%;
+  bottom: 59%;
+  display: none;
+}
+
+ .ventana--ajuste{
+display: flex;
+flex-direction: column;
+width: 100vh;
+
+
+}
+
+.ventana__cancel{
+  font-family: "Poppins";
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 35px;
+
+}
+
+.ventana__list{
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 30px;
+
+}
+
+.menu-burger__style{
+  text-decoration: none;
+}
+
+.list--element{
+  font-family: "Poppins";
+  font-size: 25px;
+  color: white;
+  
+}

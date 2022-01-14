@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+ 
+.home_titulo-portfolio{
+  display: none;
+}
+@media (min-width: 667px){
+    .home{
+      width: 100%;
+      height: 500px;
+      text-align: center;
+      background-image: url("https://m.media-amazon.com/images/I/61nr1r7MpiL._AC_SL1200_.jpg");
+    
+    }
+
+  .home_titulo-portfolio{
+    display: flex;
+    font-size: 35px;
+    font-family: "Montserrat";
+    justify-content: center;
+    margin-top: 100px;
+    
+  }
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #AB5E00;
+
+}
+
+/* template modificador */
+.card-portfolio__content{
+  padding: 20px;
+font-family: "Poppins";
+padding: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:25px;
+}
+@media (min-width: 667px){
+  .card-portfolio__content{
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.portfolio__card{
+  display: flex;
+flex-direction: column;
+align-items: center;
+border: solid 2px;
+border-radius: 15px;
+width: 250px;
+height: 320px; 
+background-image: url("https://m.media-amazon.com/images/I/61nr1r7MpiL._AC_SL1200_.jpg");
+}
+
+.portfolio__img{
+  width: 100%;
+height: 140px;
+object-fit: cover;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+.portfolio__card-content{
+  padding: 20px;
+
+}
+.portfolio__card-title{
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 15px 0;
+
+}
+.portfolio__card-text{
+  font-size: 13px;
+text-align: justify;
+}
+
+.portfolio__link{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #000;
+}

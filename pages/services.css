@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.servicios{
+  background-image: url("https://m.media-amazon.com/images/I/61nr1r7MpiL._AC_SL1200_.jpg")
+}
+
+.card__content{
+padding: 20px;
+font-family: "Poppins";
+padding: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:25px;
+}
+@media (min-width: 667px){
+  .card__content{
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.servicios__card{
+display: flex;
+flex-direction: column;
+align-items: center;
+border: solid 2px;
+border-radius: 15px;
+width: 250px;
+height: 320px; 
+}
+
+.servicios__img{
+width: 100%;
+height: 140px;
+object-fit: cover;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+.servicos__card-content{
+padding: 20px;
+}
+
+.servicios__card-title{
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.servicios__card-text{
+font-size: 13px;
+text-align: justify;
+}
