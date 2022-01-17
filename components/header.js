@@ -2,7 +2,7 @@ function headerComp (el) {
   const compoEl = document.createElement('div');
   compoEl.innerHTML= `
   <header class="header">
-      <a href="./home.html"><img src="./elementos/Nombre-01.png" alt="" class="logo"></a>
+      <a href="./index.html"><img src="./elementos/Nombre-01.png" alt="" class="logo"></a>
       <div class="header__menu">
         <div class="bloque"></div>
         <div class="bloque"></div>

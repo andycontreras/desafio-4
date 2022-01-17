@@ -28,7 +28,7 @@ align-items: center;
 border: solid 2px;
 border-radius: 15px;
 width: 250px;
-height: 320px; 
+min-height: 320px; 
 }
 
 .servicios__img{

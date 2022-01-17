@@ -1,15 +1,16 @@
-function sendForm(formEl, inputs){
+function sendForm(){
+  const formEl = document.querySelector(".contacto__form");
   formEl.addEventListener("submit", (e)=>{
     e.preventDefault();
-
+    
     const formData = new FormData(e.target);
     const object = Object.fromEntries(formData.entries());
     const mensaje = `
-    Nombre Usuario: ${object.userName} <br> <br>
-    Mail: ${object.userEmail} <br> <br>
-    MEnsaje: ${object.message}
+    Nombre Usuario: ${object.name} <br> <br>
+    Mail: ${object.email} <br> <br>
+    Mensaje: ${object.message}
     `;
-
+    
     fetch("https://apx-api.vercel.app/api/utils/dwf",{
       headers: {
         Accept: "application/json",
@@ -23,15 +24,9 @@ function sendForm(formEl, inputs){
     })
     .then(()=>{
       
-      alert("¡" + object.userName + "mensaje enviado con exito!" );
-      
-      inputs.forEach((input)=>{
-        input.value = "";
-      });
+      alert("¡" + object.name + " mensaje enviado con exito!" );
     })
-    .catch(()=>{
-      alert("Error al enviar, verifique los datos.");
-    });
+    formEl.reset();
   });
 }
 
@@ -41,28 +36,28 @@ function contactComp(el){
   <section class="contacto">
   <h2 class="contacto__title">Contacto</h2>
   <div class="formulario">
-    <form class="contacto__form">
-      <label>
-        <h3 class="contacto__label" for="name">Nombre</h3>
-        <input class="form__input contacto__input" type="text" name="name">
+  <form id="contact-form" class="contacto__form">
+  <label>
+  <h3 class="contacto__label" for="name">Nombre</h3>
+        <input class="form__input contacto__input" type="text" name="name" required>
       </label>
       <label>
         <h3 class="contacto__label" for="email">Email</h3>
-        <input class="form__input contacto__input" type="text" name="email">
+        <input class="form__input contacto__input" type="text" name="email" required>
       </label>
       <label>
-        <h3 class="contacto__label" for="message">Mensaje</h3>
-        <textarea class="form__input contacto__input" name="message"></textarea>
-      </label>
+      <h3 class="contacto__label" for="message">Mensaje</h3>
+        <textarea class="form__input contacto__input" name="message" required></textarea>
+        </label>
       <div class="contacto__submit-cont">
         <button class="contacto__submit-button">Enviar</button>
       </div>
     </form>
-  </div>
-  </section>
-  `
-  const form = document.querySelector(".contacto");
-  const inputs = document.querySelector(".form__input");
-  sendForm(form, inputs)
-  el.appendChild(componenteEl);
+    </div>
+    </section>
+    `
+    
+    el.appendChild(componenteEl);
+    
+    sendForm();
 }
